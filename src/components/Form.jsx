@@ -9,7 +9,10 @@ class Form extends Component {
   render() {
     return (
       <div>
-      
+        <form encType='multipart/form-data' method='post' action='/upload'>
+          <input id='myFile' type='file' name='myFile'/>
+          <input type='submit' value='submit' />
+        </form>
       </div>
     )
   }
