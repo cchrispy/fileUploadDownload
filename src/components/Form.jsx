@@ -67,6 +67,15 @@ class Form extends Component {
           <input id='uploadFile' type='file' name='myFile' onChange={ this.storeFile.bind(this) } />
           <button onClick={ this.uploadFile.bind(this) } >Upload!</button>
         </div>
+        <hr/>
+        <br/>
+        <div>
+          <h3>DOWNLOAD</h3>
+          <form action='/download' method='get'>
+            <button type='submit'>Download!</button>
+          </form>
+          <a href='/download' download='filledStar.png'>Download here</a>
+        </div>
       </div>
     )
   }

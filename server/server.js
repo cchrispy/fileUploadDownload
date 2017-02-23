@@ -16,5 +16,12 @@ app.post('/upload', upload.single('myFile'), (req, res) => {
   res.json({ message: 'File successfully uploaded! I think' });
 })
 
+app.get('/download', (req, res) => {
+  console.log('yo');
+  // res.download('../downloads', 'filledStar.png');
+  res.attachment('/downloads/filledStar.png');
+  res.end();
+})
+
 app.listen(port);
 console.log(`Listening on port ${ port }`);
