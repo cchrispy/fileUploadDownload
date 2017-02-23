@@ -5,9 +5,11 @@
 
 import { combineReducers } from 'redux';
 import sampleReducer from './sampleReducer';
+import list from './listReducer';
 
 const mainReducer = combineReducers({
-  sampleReducer
+  sampleReducer,
+  list
 })
 
 export default mainReducer;

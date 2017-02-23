@@ -24,5 +24,10 @@ app.get('/download', (req, res) => {
   res.end();
 })
 
+app.get('/randomNumber', (req, res) => {
+  var rando = Math.random();
+  res.json({ rando });
+})
+
 app.listen(port);
 console.log(`Listening on port ${ port }`);

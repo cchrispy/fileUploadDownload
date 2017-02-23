@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import sampleAction from '../actions/sampleAction';
 
 import Form from './Form.jsx';
+import List from './List.jsx';
 import '../styles/main.scss';
 
 class App extends Component {
@@ -15,6 +16,8 @@ class App extends Component {
       <div>
         Hello World!
         <Form />
+        <hr/>
+        <List />
       </div>
     )
   }

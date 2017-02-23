@@ -19,3 +19,4 @@ const refresh = () => {
 
 refresh();
 store.subscribe(refresh);
+store.subscribe(() => console.log(store.getState()));
