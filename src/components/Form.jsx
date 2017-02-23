@@ -6,10 +6,21 @@ class Form extends Component {
     super(props);
   }
 
+  uploadFile() {
+    fetch('/upload', {
+      method: 'POST',
+
+    }).then(response => {
+
+    }).catch(err => {
+      console.log('Error uploading: ', err);
+    })
+  }
+
   render() {
     return (
       <div>
-        <form encType='multipart/form-data' method='post' action='/upload'>
+        <form enctype='multipart/form-data' method='post' action='/upload'>
           <input id='myFile' type='file' name='myFile'/>
           <input type='submit' value='submit' />
         </form>
