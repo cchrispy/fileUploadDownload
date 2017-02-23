@@ -20,8 +20,9 @@ class Form extends Component {
   render() {
     return (
       <div>
-        <form enctype='multipart/form-data' method='post' action='/upload'>
-          <input id='myFile' type='file' name='myFile'/>
+        <form encType='multipart/form-data' method='post' action='/upload'>
+          <label htmlFor='myFile'>Upload</label>
+          <input id='myFile' type='file' name='myFile' accept='image/*'/>
           <input type='submit' value='submit' />
         </form>
       </div>

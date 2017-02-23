@@ -10,7 +10,7 @@ var app = express();
 
 app.use(express.static(path.resolve(__dirname, '..', 'dist')));
 
-app.post('/upload', upload.single('myUniqueFile'), (req, res, next) => {
+app.post('/upload', upload.single('myFile'), (req, res) => {
   console.log('req file: ', req.file);
   console.log('req body: ', req.body);
   res.json({ message: 'File successfully uploaded! I think' });
