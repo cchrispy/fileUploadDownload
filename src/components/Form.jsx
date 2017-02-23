@@ -71,10 +71,11 @@ class Form extends Component {
         <br/>
         <div>
           <h3>DOWNLOAD</h3>
+          Similarly not working<br/>
           <form action='/download' method='get'>
             <button type='submit'>Download!</button>
           </form>
-          <a href='/download' download='filledStar.png'>Download here</a>
+          <a href='/download' download>Download here</a>
         </div>
       </div>
     )

@@ -19,6 +19,7 @@ app.post('/upload', upload.single('myFile'), (req, res) => {
 app.get('/download', (req, res) => {
   console.log('yo');
   // res.download('../downloads', 'filledStar.png');
+  res.download('../downloads/filledStar.png');
   res.attachment('/downloads/filledStar.png');
   res.end();
 })
