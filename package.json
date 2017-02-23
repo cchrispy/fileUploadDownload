@@ -1,5 +1,5 @@
 {
-  "name": "reduxBoilerplate",
+  "name": "fileUploadDownload",
   "version": "1.0.0",
   "description": "Boilerplate code to set up an application with Redux and Webpack",
   "main": "webpack.config.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cchrispy/reduxBoilerplate.git"
+    "url": "git+https://github.com/cchrispy/fileUploadDownload.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cchrispy/reduxBoilerplate/issues"
+    "url": "https://github.com/cchrispy/fileUploadDownload/issues"
   },
-  "homepage": "https://github.com/cchrispy/reduxBoilerplate#readme",
+  "homepage": "https://github.com/cchrispy/fileUploadDownload#readme",
   "dependencies": {
     "express": "^4.14.1",
     "path": "^0.12.7",
